@@ -11,7 +11,7 @@ module.exports = function(config) {
 
     frameworks: ['browserify', 'mocha'],
 
-    reporters: ['progress', 'spec', 'coverage'],
+    reporters: ['spec', 'coverage'],
 
     preprocessors: {
       'test/**/*.js': 'browserify'
@@ -22,7 +22,7 @@ module.exports = function(config) {
       mocha: {
         grep: process.env.GREP,
         reporter: 'html',
-        timeout: 80000
+        timeout: 10000
       }
     },
 
@@ -46,6 +46,6 @@ module.exports = function(config) {
         { type: 'html' },
         { type: 'json' }
       ]
-    },
+    }
   });
 };
