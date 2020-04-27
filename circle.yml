@@ -1,0 +1,7 @@
+machine:
+  node:
+    version: 6.4.0
+general:
+  branches:
+    ignore:
+      - /alois\/.*/ # or ignore regexes
